@@ -25,7 +25,7 @@ import {
   async function graphQLFetch(query, variables = {}) {
     try {
         /****** Q4: Start Coding here. State the correct IP/port******/
-        const response = await fetch('http://192.168.3.79:3000/graphql', {
+        const response = await fetch('http://10.0.2.2:3000/graphql', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json'},
         body: JSON.stringify({ query, variables })
